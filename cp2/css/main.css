@@ -1,0 +1,148 @@
+
+html,body
+{
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-image: url("../pics/wall.jpg");
+	background-size: cover;
+}
+
+#wrapper
+{
+	height: 100%;
+	background-color: rgba(255,255,255,0.5);
+}
+
+/*EN TETE INDEX */
+#myheader
+{
+	height: 5em;
+	display: flex;
+}
+
+#name
+{
+	width: 80%;
+	height: 100%;
+	align-items: center;
+}
+
+#name h1
+{
+	color: white;
+	align-items: center;
+	text-shadow: 4px 4px grey;
+	padding-left: 10em;
+}
+
+#logo
+{
+	width: 20%;
+	float: right;
+}
+
+#logo img
+{
+	width: 5rem;
+	height: 5rem;
+	padding-left: 2em;
+}
+
+#menu .items
+{
+	display: flex;
+	list-style-type: none;
+	font-size: 1.3em;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: space-evenly ;
+	padding-bottom: 1em;
+}
+
+#menu .items a
+{
+	color: rgb(122, 103, 103);
+	text-decoration: none ;
+	border: rgb(122, 103, 103) .3em groove ;
+	text-shadow: 0.2em 0.2em 0.2em rgb(122, 103, 103);
+	padding: 0.3em;
+	box-shadow: 0.1em 0.1em 0.1em rgb(122, 103, 103);
+	transition-duration: 0.5s;
+}
+
+#menu .items a:hover
+{
+	color: rgb(129, 150, 143);
+	text-decoration: none ;
+	border: rgb(129, 150, 143) .3em groove ;
+	text-shadow: 0.2em 0.2em 0.2em rgb(129, 150, 143);
+	padding: 0.3em;
+	box-shadow: 0.1em 0.1em 0.1em rgb(129, 150, 143);
+}
+
+/* DIV du fichier position.html*/
+div[id^=div]
+{
+	width: 300px;
+	height: 300px;
+	border: 10px 10px solid;
+	margin: 10px;
+	padding: 10px;
+}
+
+.box
+{
+	width: 50px;
+	height: 50px;
+	border: black dotted 1px;
+	border-radius: 25px;
+	background-color: rgb(84, 194, 133);
+	margin: 5px;
+}
+
+#div1
+{
+	position: relative;
+background-color: pink }
+
+#div1>.box
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+}
+
+#div2
+{
+	background-color: cadetblue;
+	position: relative;
+	top: 100px;
+	left: 100px;
+
+    overflow: auto;
+}
+
+#div3
+{
+	position: absolute;
+	background-color: rgb(128, 128, 128);
+	top: 0;
+	right: 0;
+}
+
+#div2>.box
+{
+	float: left;
+}
+
+#div2>.txt
+{
+	clear: both;
+}

@@ -1,0 +1,130 @@
+
+html
+{
+
+
+background: scroll 50% 50% black url() repeat;
+	color: white;
+	
+}
+
+h1
+{
+	color: white;
+	background-color: black;
+	
+}
+
+body
+{
+
+
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+background: scroll 50% 50% black url(../pics/sun.png)  no-repeat;
+
+}
+
+ol  ol {
+list-style-type: lower-roman;
+
+		color : rgb(32, 161, 184);
+}
+
+
+ul{
+	list-style-type: circle;
+	color : pink
+}
+
+
+
+
+
+.pre
+{
+	color :blue;
+	border-left: red 8px solid ;
+	margin-left: 20px;
+	padding-left: 15px;
+}
+
+
+
+td, th
+{
+	color: white;
+
+	border: thin solid #5f6266;
+	width: 50%;
+	text-align: center;
+}
+
+caption
+{
+	color: grey  ;
+}
+
+#test
+{
+	color: blue;
+}
+
+body table:nth-of-type(2) td:nth-child(2)
+{background-color: green;
+
+}
+
+
+
+
+
+
+
+
+tfoot,thead
+{
+	background-color: grey;
+}
+
+td:hover,th:hover
+{
+	color: white;
+	background-color: red;
+	cursor: pointer;
+}
+
+dt
+{
+	text-transform: uppercase;
+	color:brown;
+}
+
+dd,pp
+{
+	padding-top: 2rem ;
+	padding-bottom: 2rem;
+	color:rgb(141, 81, 81);
+	text-align: justify;
+}
+
+dd:hover
+{
+	color: cornsilk;
+	
+}
+
+.image
+{
+	width:200px;
+
+	box-shadow:  5px 5px 20px #fefcc9,
+
+}
+
+.image:hover{
+  width: 150px; /* on affiche l'image au carré */
+  height: 150px;
+  border-radius: 50%;  /* on arrondit l'image */
+  -webkit-transform: rotate(360deg); /* rotation de l'image */
+  transform: rotate(360deg);
+}
