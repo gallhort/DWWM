@@ -269,7 +269,7 @@ animation-iteration-count: infinite;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        border: grey 0.2em solid;
+        
         
 }
 #media .interview{
@@ -286,3 +286,41 @@ border: grey 0.2em solid;
 
 width: 100%;
 }
+
+/* FOOTER*/
+
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+
+.level1{
+    height: 15em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        clear: both;
+        padding: 0;
+
+}
+
+
+
+
+.level1>li:nth-of-type(1),.level1>li:nth-of-type(2){
+border-right: gray .2em dashed;
+margin-right: 17em;
+padding-right: 20em;
+
+}
+
+.level1>li ul{
+list-style: none;
+padding-top: 1.5em;
+padding-left: 0;
+}
+
