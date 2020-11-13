@@ -259,3 +259,30 @@ animation-delay: 1s;
 animation-direction: alternate;
 animation-iteration-count: infinite;
 }
+
+
+
+/* MEDIA*/
+
+
+#media{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: grey 0.2em solid;
+        
+}
+#media .interview{
+border: grey 0.2em solid;
+    width: 30%;
+}
+
+#conv{
+    width: 100%;
+
+}
+
+#media audio{
+
+width: 100%;
+}
