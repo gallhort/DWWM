@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darons Codeurs : Postuler</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <main id="wrapper">
+
+        <header id="myheader">
+
+            <div id="logo"><a href="index.html"><img src="pics/logo.png" width="250" height="250"
+                        alt="Logo Darons Codeurs"></a>
+            </div>
+            <div id="name">
+                <h1> LES DARONS CODEURS</h1>
+            </div>
+
+        </header>
+
+
+        <nav id="menu">
+            <ul class="items">
+
+                <li><a href="team.html">Notre équipe</a>|</li>
+                <li><a href="register.html">Inscription</a>|</li>
+                <li><a href="positions.html">Réalisation</a>|</li>
+                <li><a href="bootstrap.html">Notre blog</a>|</li>
+                <li><a href="https://developer.mozilla.org/fr/">Documentation</a>|</li>
+            </ul>
+        </nav>
+
+
+        <H1>Formulaire d'inscription</H1>
+
+
+
+
+
+
+        <form action="check.php" method="post" name="register" enctype="multipart/form-data">
+            <H2>Questionnaire</H2>
+
+
+            <fieldset>
+
+                <legend>Identité</legend>
+
+                <div>
+                    <label for="fname">Prénom :</label>
+                    <input type="text" id="fname" name="fname" placeholder="prénom usuel" required>
+                </div>
+
+                <div>
+                    <label for="dob">Date de naissance :</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+
+                <div>
+                    <label for="mail">@mail :</label>
+                    <input type="email" id="mail" name="mail">
+                </div>
+
+
+                <div>
+                    <label for="site">site web perso :</label>
+                    <input type="url" id="site" name="site">
+                </div>
+
+                <div>
+                    <label for="phone">Télephone :</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div>
+                    <label for="land">Pays :</label>
+                    <select id="land" name="land">
+
+                        <optgroup label="Europe">
+
+                            <option value="IT">Italie</option>
+                            <option value="GR">Grèce</option>
+                            <option value="DE">Allemagne</option>
+
+                        </optgroup>
+                        <optgroup label="Afrique">
+
+                            <option value="DZ">Algérie</option>
+                            <option value="CI">Côte d'ivoire</option>
+                            <option value="ZA">Afrique du sud</option>
+
+                        </optgroup>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Sexe</legend>
+                    <div>
+                        <input type="radio" name="sex" id="sex_f" value="f">
+                        <label for="sex_f"> Féminin</label>
+                        <input type="radio" name="sex" id="sex_m" value="m">
+                        <label for="sex_m"> Masculin</label>
+                        <input type="radio" name="sex" id="sex_n" value="n">
+                        <label for="sex_n"> Neutre</label>
+                    </div>
+                </fieldset>
+
+
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>Compétences</legend>
+                <div>
+                    <label for="exp">Expérience</label>
+                    <input type="number" id="ex" name="ex" min="5" max="35" step="1">
+                </div>
+
+                <div>
+                    <label for="pref"> Language fort</label>
+                    <input type="text" name="pref" id="pref" list="languages">
+                    <datalist id="languages">
+                        <option value="PHP">
+                        <option value="Java">
+                        <option value="Nodejs">
+                        <option value="Python">
+                        <option value="Cobol">
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="area">Mobilité :</label>
+                    <select id="area" name="area[]" size="5" multiple>
+                        <option value="FR1">Paris</option>
+                        <option value="IT1">Bergame</option>
+                        <option value="GR1">Athènes</option>
+                        <option value="DE1">Dortmunt</option>
+                        <option value="DZ1">Alger</option>
+                        <option value="CI1">Abidjan</option>
+                        <option value="ZA1">Johanesburg</option>
+                        <option value="DE2">Berlinoption>
+
+
+                    </select>
+                </div>
+
+                <div><label for="test">Couleur</label>
+                    <input type="color" id="test" name="test">
+                </div>
+
+                <div><label for="cv">Curiculum Vitae</label>
+                    <input type="file" id="cv" name="cv" accept=".pdf,.doc,.odt,.docx,.txt">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="3000000">
+                </div>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Prétentions salariales</legend>
+                <div>
+
+                    <label for="salary"></label>
+                    <input type="range" id="salary" name="salary" min="2500" max="8000" step="100" value="3000">
+                    <output id="valSal"> </output>
+
+
+                </div>
+                <fieldset>
+                    <legend>Statut</legend>
+
+                    <div>
+                        <input type="checkbox" name="status[]" id="jr" value="Junior">
+                        <label for="jr"> Dev. junior</label>
+                        <input type="checkbox" name="status[]" id="sr" value="Senior">
+                        <label for="sr"> Dev. senior</label>
+                        <input type="checkbox" name="status[]" id="cdp" value="Chef de projets">
+                        <label for="cdp"> Chef de projets</label>
+                    </div>
+
+                </fieldset>
+
+                <div>
+                    <label for="rem">Remarques :</label>
+                    <textarea name="rem" id="rem" cols="30" rows="10"></textarea>
+
+
+                </div>
+
+            </fieldset>
+
+
+            <input type="submit" value="Postuler">
+            <input type="reset" value="Effacer">
+
+        </form>
+
+
+    </main>
+</body>
+
+</html>
