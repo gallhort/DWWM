@@ -324,3 +324,17 @@ padding-top: 1.5em;
 padding-left: 0;
 }
 
+/*FORMULAIRE*/
+form div{
+
+margin: .5rem 0;
+
+}
+
+
+form div>*:first-child{
+display: inline-block;
+width: 10%;
+font-weight: bold;
+text-align: right;
+}

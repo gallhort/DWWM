@@ -167,8 +167,9 @@
                 <legend>Prétentions salariales</legend>
                 <div>
 
-                    <label for="salary"></label>
-                    <input type="range" id="salary" name="salary" min="2500" max="8000" step="100" value="3000">
+                    <label for="salary">Salaire</label>
+                    <input type="range" id="salary" name="salary" min="2500" max="8000" step="100" value="3000"
+                        onchange="document.getElementById('valSal').textContent=this.value;">
                     <output id="valSal"> </output>
 
 
