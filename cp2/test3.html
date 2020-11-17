@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - exemple 3</title>
+    <link rel="stylesheet" href="css/maintest2.css" />
+
+
+    <style>
+        section>div {
+            background-color: rgb(245, 132, 132);
+            border: .2em solid #000;
+            flex: 1 1 0;
+
+
+        }
+
+        section>div:last-child {
+
+
+            flex-basis: 100%;
+        }
+
+        section {
+            display: flex;
+            flex-flow: row wrap;
+            height: 500px;
+            align-content: stretch;
+            border: 1px solid rgb(221, 13, 13);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section>
+
+        <div>Lorem, ipsum dolor sit amet consectetur .</div>
+        <div>Lorem ipsum dolor</div>
+        <div>Lorem, ipsum. </div>
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>

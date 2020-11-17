@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+        * {
+
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+
+            flex-wrap: wrap;
+        }
+
+        body>* {
+            flex: 1 1 0em;
+        }
+
+
+        header,
+        footer {
+            flex-basis: 100%;
+        }
+
+
+        /* HEADER */
+
+        header {
+            height: 10vh;
+            border: 5px solid #000;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        header>* {
+            flex-basis: 6em;
+        }
+
+
+        /* SECTION */
+
+        section {
+            border: 5px solid pink;
+            display: flex;
+
+
+        }
+
+        section>* {
+            flex: 1 1 0;
+
+        }
+
+        nav {
+            flex-grow: 15;
+        }
+
+
+        aside {
+            flex-grow: 25;
+            align-self: flex-start;
+        }
+
+        main {
+            border: 1px solid #000;
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: 60;
+            justify-content: space-around;
+            align-content: space-between;
+
+        }
+
+
+
+        main>div {
+            border: 1px solid #000;
+            width: 18vw;
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+
+
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            border: 5px solid gray;
+            text-align: center;
+            height: 10vh;
+        }
+
+
+        figcaption {
+
+            text-align: center;
+        }
+
+        div img {
+
+            max-width: 100%;
+            max-height: 100%;
+
+        }
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <header>
+
+        <div>logo</div>
+        <div>titre</div>
+        <div>connexion</div>
+
+
+    </header>
+
+    <section>
+
+        <nav>
+            <ul>
+
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Notre équipe</a></li>
+                <li><a href="">Inscription</a></li>
+                <li><a href="">Réalisations</a></li>
+                <li><a href="">Documentations</a></li>
+            </ul>
+
+
+        </nav>
+        <main>
+            <div>
+                <figure>
+                    <img src="pics/perso1.png" alt="employé 1" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso2.png" alt="employé 2" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso3.png" alt="employé 3" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso4.png" alt="employé 4" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso5.png" alt="employé 5" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso5.png" alt="employé 6" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure></figure>
+                <img src="pics/perso7.png" alt="employé 7" />
+                <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso8.jpeg" alt="employé 8" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso10.png" alt="employé 9" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso1.png" alt="employé 10" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso2.png" alt="employé 11" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso3.png" alt="employé 12" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso4.png" alt="employé 13" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso5.png" alt="employé 14" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso8.jpeg" alt="employé 15" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso7.png" alt="employé 16" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso8.jpeg" alt="employé 1" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso10.png" alt="employé 17" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso8.jpeg" alt="employé 18" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso10.png" alt="employé 19" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="pics/perso1.png" alt="employé 20" />
+                    <figcaption>Employé 1</figcaption>
+                </figure>
+            </div>
+
+        </main>
+        <aside>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A velit cupiditate amet, accusamus illo
+            voluptate, voluptates sequi blanditiis at molestiae porro maiores quo, voluptatem excepturi! Vero iste
+            officiis doloribus ducimus.Explicabo, tenetur illum quisquam beatae saepe repellat nulla exercitationem,
+            quae quis impedit eius sapiente expedita soluta labore consequatur. Similique, debitis eos. Eaque, obcaecati
+            mollitia maxime corporis fugiat nihil eveniet maiores!</aside>
+
+    </section>
+
+    <footer>
+
+
+        <p>FooterFooterFooterFooterFooterFooterFooterFooterFooterFooterFooter</p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

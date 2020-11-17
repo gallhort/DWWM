@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - exemple 1</title>
+    <link rel="stylesheet" href="css/maintest.css" />
+
+
+    <style>
+        section>div {
+            background-color: rgb(245, 132, 132);
+            border: 1px solid #000;
+            flex: 1 1 0;
+
+        }
+
+
+        section {
+
+
+            display: flex;
+            align-items: center;
+        }
+
+        section>div:nth-of-type(2) {
+            background-color: rgb(245, 132, 132);
+            border: 1px solid #000;
+            flex: 1 1 0;
+            align-self: flex-end;
+            order: 3;
+        }
+
+
+        section>div:last-child {
+
+
+            order: 1;
+        }
+
+        section>div:first-child {
+
+
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section>
+
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, impedit. Facere quos iure asperiores,
+            illo quaerat explicabo dolorum sit enim odit minima repellat porro voluptatem? Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Neque blanditiis amet laudantium aspernatur
+            necessitatibus aliquid aperiam, quae obcaecati! Expedita quisquam saepe corporis libero dolor non adipisci
+            qui porro dolorum! Quas aut commodi architecto, dignissimos reprehenderit quam ullam consectetur
+            consequuntur inventore magni, id qui culpa recusandae omnis! Laboriosam dicta maxime voluptate! .</div>
+        <div>Lorem ipsum dolor</div>
+        <div>Lorem, ipsum.
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+</body>
+
+</html>
